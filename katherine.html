@@ -6,14 +6,16 @@
   <link rel="stylesheet" href="style.css">
   <style>
      .topo{
-       display: flex;
+      display: flex;
       align-items: center;
       background-color: #472b82;
       padding: 20px;
       border-radius: 50px;
       color: #ffde59;
       text-align: left;
-      margin-bottom: 30px;
+      margin-top: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
       > div {
       max-width: 1000px; 
       }
@@ -57,14 +59,6 @@
       font-size: 1.3em;
     }
 
-    .menu {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 30px;
-      cursor: pointer;
-      color: #ffde59;
-    }
     body {
       background-color: #2c085f;
       height: 100%;
@@ -87,11 +81,27 @@
       text-shadow: 2px 2px 6px #000;
 
     }
+    .imagem-katherine {
+      flex: 1 1 400px;
+      text-align: center;
+}
+
+    .imagem-katherine img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+    .imagem-katherine2 img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
   </style>
 </head>
 <body>
 
-  <div class="menu">☰</div>
 
   <div class="topo">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0rUNXRnCH8wPHHjJ6nXi_Zfrf2-P2QaJqg&s.jpg" alt="Katherine Johnson">
@@ -103,9 +113,22 @@
 
   <div class="conteudo">
     <div class="titulo-secao">Sobre ela</div>
-    <p>Superou barreiras raciais e de gênero, garantindo sua participação em reuniões e em projetos importantes. Foi uma peça chave no Projeto Mercury e na missão Apollo 11, calculando os trajetos e rotas, garantindo a segurança e o sucesso dos voos.</p>
+    <p>Katherine Johnson foi uma matemática afro-americana nascida em 1918, na Virgínia Ocidental. Desde criança demonstrava talento para a matemática e tornou-se professora, como era comum entre mulheres negras formadas na época. No entanto, teve a oportunidade de aplicar seus conhecimentos no Laboratório Aeronáutico de Langley, do NACA (atual NASA), durante a Segunda Guerra Mundial e a Guerra Fria. </p>
+    
+    <div class="imagem-katherine">
+        <img src="katherine_johnson_john_glenn_0.webp" alt="katherine">
+    </div>
+    
+    <p>Apesar da desigualdade de gênero, seu talento lhe garantiu reconhecimento entre engenheiros e cientistas. Na década de 1960, sua contribuição foi fundamental para o sucesso das missões espaciais, incluindo a que levou o homem à Lua. Recebeu diversas honrarias, como a Medalha Presidencial da Liberdade e a Medalha de Ouro do Congresso. Sua história destaca a importância da educação de qualidade, de políticas públicas inclusivas e do reconhecimento das contribuições de mulheres negras na ciência.</p>
 
+    <p>Superou barreiras raciais e de gênero, garantindo sua participação em reuniões e em projetos importantes. Foi uma peça chave no Projeto Mercury e na missão Apollo 11, calculando os trajetos e rotas, garantindo a segurança e o sucesso dos voos.</p>
+    
+    <div class="imagem-katherine2">
+        <img src="katherine sendo premiada.jpg" alt="katherine">
+    </div>
+   
     <p>Aposentou-se em 1986 e ao longo de 33 anos de carreira contribuiu e participou em muitas missões espaciais, incluindo ônibus espaciais e planos para Marte. Em 2015 Recebeu a "Medalha Presidencial da Liberdade" e em 2016 a NASA nomeou um centro de pesquisa em sua homenagem, e sua história inspirou o filme "Estrelas Além do Tempo (2016)"</p>
+    
 
   </div>
 
