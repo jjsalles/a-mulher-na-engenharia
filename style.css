@@ -1,0 +1,374 @@
+/* ===== RESET & BASE ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: #ffde59;
+}
+
+/* ===== IMAGEM DE FUNDO GENÉRICA ===== */
+.imagem-fundo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ===== HERO / LETREIRO ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.letreiro {
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5e663;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  white-space: nowrap;
+}
+
+/* ===== MENU ===== */
+#menu-toggle {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: fixed;
+  top: 10px; left: 10px;
+  z-index: 1001;
+  color: #fff;
+}
+
+#top-menu {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #401675;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+#top-menu a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#top-menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTEÚDO GERAL ===== */
+.conteudo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.2em 0;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 800px;
+}
+
+/* ===== INTRODUÇÃO ===== */
+.introducao {
+  position: relative;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  color: #FFD700;
+}
+
+.introducao::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: #4b348d;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Blocos com imagem e texto */
+.bloco {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin-bottom: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.bloco img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.bloco img:hover {
+  transform: scale(1.05);
+}
+
+.texto {
+  font-size: 1.2em;
+  flex: 1;
+  min-width: 300px;
+}
+
+.invertido {
+  flex-direction: row-reverse;
+}
+
+.clique-texto {
+  color: white;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* ===== SEÇÃO EXEMPLOS ===== */
+.exemplos {
+  background-color: #4b348d;
+  color: #ffde59;
+  padding: 60px 30px;
+  margin: 0;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Botão com imagem */
+.botao {
+  width: 200px;
+  height: 320px;
+  border: none;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 10px #000, 0 0 20px rgb(68, 3, 99);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #000, 0 0 30px rgb(68, 3, 99);
+}
+
+
+.nome {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  color: #d6b4ff;
+  font-weight: bold;
+  font-size: 1em;
+  z-index: 1;
+}
+
+/* Botões com fundo personalizado */
+#graceHopper { background-image: url('graceexemplo.jpg'); }
+#hedyLamarr { background-image: url('hedyexemplo.jpg'); }
+#katherineJohnson { background-image: url('katherineexemplo.jpg'); }
+
+/* ===== SEÇÃO PERSONALIDADES NOTÓRIAS ===== */
+.personalidades {
+  position: relative;
+  padding: 80px 20px;
+  color: #000;
+  z-index: 1;
+}
+
+.personalidades::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: #4b348d;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.personalidades .titulo {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffde59;
+  text-shadow: 2px 2px 6px #000;
+}
+
+/* ===== CARDS (GENÉRICOS E PERSONALIZADOS) ===== */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f5d553;
+  border-radius: 20px;
+  width: 260px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px #ffd700;
+  overflow: hidden;
+}
+
+.card:hover,
+.card.expanded {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffd966;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.card-header p {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #3e2f80;
+  text-align: center;
+}
+
+.card-content {
+  display: none;
+  padding: 15px;
+  text-align: justify;
+  color: #3e2f80;
+  font-size: 0.95em;
+}
+
+.card.expanded .card-content {
+  display: block;
+}
+
+/* ===== TÍTULOS ===== */
+.titulo {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffde59;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.titulo-inicio {
+  font-size: 50px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffde59;
+  text-shadow: 2px 2px 6px #000; 
+}
+.sub-titulo-inicio {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffde59;
+  text-shadow: 2px 2px 6px #000; 
+}
+.legenda {
+  text-align: center;
+  color: #ffde59;
+  font-size: 0.95em;
+  margin-top: 8px;
+  font-style: Lora;
+}
+/* ===== SEÇÃO EQUIPE ===== */
+.secao-equipe {
+  background-color: #4b348d;
+  color: #ffde59;
+  padding: 60px 30px;
+}
+
+.container-equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.texto-equipe {
+  flex: 1 1 500px;
+  text-align: left;
+}
+
+.texto-equipe h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffde59;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.texto-equipe p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  max-width: 100%;
+  color: #d6b4ff;
+}
+
+.imagem-equipe {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.imagem-equipe img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
