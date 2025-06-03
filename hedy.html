@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+
+  
   <title>Hedy Lamarr</title>
   <link rel="stylesheet" href="style.css">
   <style>
@@ -92,37 +94,79 @@
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
+  .menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffde59;
+  z-index: 1100;
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* escondido por padrão */
+  width: 250px;
+  height: 100%;
+  background-color: #37248a;
+  color: #ffde59;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#side-menu.open {
+  left: 0;
+}
+
+#side-menu a {
+  padding: 15px 30px;
+  color: #ffde59;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-bottom: 1px solid #fff3;
+}
+
+#side-menu a:hover {
+  background-color: #3a2770;
+  color: white;
+}
+
+
+
   </style>
 </head>
 <body>
 
+<div class="menu" onclick="toggleMenu()">☰</div>
+<nav id="side-menu" class="side-menu"></nav>
 
-  <div class="topo">
+<div class="topo">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYdDcRstNXMthMi58llY5TNG5SpMi6bjiWEg&s.jpg" alt="Hedy Lamarr">
     <div>
       <div class="nome-data"><h2>Hedy Lamarr<br><small>De 1914 a 2000</small></h2></div>
-      <p>Hedy Lamarr foi uma atriz e inventora, famosa por sua carreira no cinema durante a "Era de Ouro" de Hollywood, mas também por suas notáveis contribuições científicas, especialmente no campo da tecnologia de comunicações.</p>
+        <p>Hedy Lamarr foi uma atriz e inventora, famosa por sua carreira no cinema durante a "Era de Ouro" de Hollywood, mas também por suas notáveis contribuições científicas, especialmente no campo da tecnologia de comunicações.</p>
+      </div>
     </div>
-  </div>
-
   <div class="conteudo">
     <div class="titulo-secao">Sobre ela</div>
-    <p>Seu feito foi o desenvolvimento de uma tecnologia de salto de frequência, uma técnica que permite a transmissão de sinais de rádio de forma segura, alterando a frequência de transmissão em intervalos regulares. Essa invenção foi inicialmente projetada para ajudar na comunicação segura durante a Segunda Guerra Mundial, impedindo que os inimigos pudessem interceptar e bloquear os sinais de rádio.</p>
-
+      <p>Seu feito foi o desenvolvimento de uma tecnologia de salto de frequência, uma técnica que permite a transmissão de sinais de rádio de forma segura, alterando a frequência de transmissão em intervalos regulares. Essa invenção foi inicialmente projetada para ajudar na comunicação segura durante a Segunda Guerra Mundial, impedindo que os inimigos pudessem interceptar e bloquear os sinais de rádio.</p>
     <div class="imagem-hedy">
         <img src="invençãohedylamarr.jpg" alt="hedy">
-    </div>
-    
-    <p>Em 1942, junto com o compositor George Antheil, Hedy Lamarr patenteou esse sistema de comunicação, que usava rolos de filme perfurados para mudar as frequências de maneira sincronizada, permitindo que os torpedos guiados por rádio não fossem facilmente bloqueados ou capturados. Embora a tecnologia não tenha sido adotada amplamente durante a guerra, ela mais tarde se tornou a base para o desenvolvimento de tecnologias modernas, como o Wi-Fi, o Bluetooth e as comunicações celulares.</p>
-
-    <p>A patente de Lamarr e Antheil foi ignorada por muitos anos, mas sua importância foi reconhecida décadas depois. Hedy Lamarr recebeu, em 1997, o prêmio "Invenção e Tecnologia" do National Inventors Council e foi amplamente reconhecida por suas contribuições à ciência, além de sua carreira no cinema.</p>
-
+  </div>
+      <p>Em 1942, junto com o compositor George Antheil, Hedy Lamarr patenteou esse sistema de comunicação, que usava rolos de filme perfurados para mudar as frequências de maneira sincronizada, permitindo que os torpedos guiados por rádio não fossem facilmente bloqueados ou capturados. Embora a tecnologia não tenha sido adotada amplamente durante a guerra, ela mais tarde se tornou a base para o desenvolvimento de tecnologias modernas, como o Wi-Fi, o Bluetooth e as comunicações celulares.</p>
+      <p>A patente de Lamarr e Antheil foi ignorada por muitos anos, mas sua importância foi reconhecida décadas depois. Hedy Lamarr recebeu, em 1997, o prêmio "Invenção e Tecnologia" do National Inventors Council e foi amplamente reconhecida por suas contribuições à ciência, além de sua carreira no cinema.</p>
     <div class="imagem-hedy">
         <img src="hedylamarrlinda.jpg" alt="hedy">
     </div>
-    
     <p>Hedy Lamarr é, portanto, uma figura única que combina talento artístico e inovação científica, tendo deixado um legado duradouro não apenas no mundo do entretenimento, mas também na tecnologia moderna.</p>
-  </div>
+</div>
+
+  <script src="script.js" defer></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ html, body {
   color: #ffde59;
 }
 
-/* ===== IMAGEM DE FUNDO GENÉRICA ===== */
+
 .imagem-fundo {
   position: absolute;
   top: 0; left: 0;
@@ -17,7 +17,7 @@ html, body {
   z-index: -1;
 }
 
-/* ===== HERO / LETREIRO ===== */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -35,7 +35,7 @@ html, body {
   white-space: nowrap;
 }
 
-/* ===== MENU ===== */
+
 #menu-toggle {
   font-size: 30px;
   cursor: pointer;
@@ -68,7 +68,7 @@ html, body {
   text-decoration: underline;
 }
 
-/* ===== CONTEÚDO GERAL ===== */
+
 .conteudo {
   position: relative;
   height: 100%;
@@ -90,7 +90,7 @@ p {
   max-width: 800px;
 }
 
-/* ===== INTRODUÇÃO ===== */
+
 .introducao {
   position: relative;
   padding: 60px 40px;
@@ -112,7 +112,7 @@ p {
   z-index: -1;
 }
 
-/* Blocos com imagem e texto */
+
 .bloco {
   display: flex;
   align-items: center;
@@ -151,7 +151,7 @@ p {
   font-size: 0.9em;
 }
 
-/* ===== SEÇÃO EXEMPLOS ===== */
+
 .exemplos {
   background-color: #4b348d;
   color: #ffde59;
@@ -166,7 +166,7 @@ p {
   flex-wrap: wrap;
 }
 
-/* Botão com imagem */
+
 .botao {
   width: 200px;
   height: 320px;
@@ -200,12 +200,12 @@ p {
   z-index: 1;
 }
 
-/* Botões com fundo personalizado */
+
 #graceHopper { background-image: url('graceexemplo.jpg'); }
 #hedyLamarr { background-image: url('hedyexemplo.jpg'); }
 #katherineJohnson { background-image: url('katherineexemplo.jpg'); }
 
-/* ===== SEÇÃO PERSONALIDADES NOTÓRIAS ===== */
+
 .personalidades {
   position: relative;
   padding: 80px 20px;
@@ -232,7 +232,7 @@ p {
   text-shadow: 2px 2px 6px #000;
 }
 
-/* ===== CARDS (GENÉRICOS E PERSONALIZADOS) ===== */
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -293,7 +293,7 @@ p {
   display: block;
 }
 
-/* ===== TÍTULOS ===== */
+
 .titulo {
   font-size: 36px;
   margin-bottom: 40px;
@@ -323,7 +323,7 @@ p {
   margin-top: 8px;
   font-style: Lora;
 }
-/* ===== SEÇÃO EQUIPE ===== */
+
 .secao-equipe {
   background-color: #4b348d;
   color: #ffde59;
@@ -372,10 +372,46 @@ p {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
   .menu {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #ffde59;
-  }
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffde59;
+  z-index: 1100;
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* escondido por padrão */
+  width: 250px;
+  height: 100%;
+  background-color: #37248a;
+  color: #ffde59;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#side-menu.open {
+  left: 0;
+}
+
+#side-menu a {
+  padding: 15px 30px;
+  color: #ffde59;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-bottom: 1px solid #fff3;
+}
+
+#side-menu a:hover {
+  background-color: #3a2770;
+  color: white;
+}
+
+
+

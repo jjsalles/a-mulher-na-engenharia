@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+
   <title>Dados</title>
   <style>
     body {
@@ -12,14 +13,6 @@
       font-family: 'Lora', serif;
     }
 
-    .menu {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 30px;
-      cursor: pointer;
-      color: #ffde59;
-    }
 
     .conteudo {
       max-width: 900px;
@@ -62,11 +55,59 @@
       font-size: 1.2em;
       max-width: 800px;
     }
+      .menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffde59;
+  z-index: 1100;
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* escondido por padrão */
+  width: 250px;
+  height: 100%;
+  background-color: #37248a;
+  color: #ffde59;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#side-menu.open {
+  left: 0;
+}
+
+#side-menu a {
+  padding: 15px 30px;
+  color: #ffde59;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-bottom: 1px solid #fff3;
+}
+
+#side-menu a:hover {
+  background-color: #3a2770;
+  color: white;
+}
+
+
+
+    
   </style>
 </head>
 
 <body>
-  <div class="menu">&#9776;</div>
+
+  <div class="menu" onclick="toggleMenu()">☰</div>
+<nav id="side-menu" class="side-menu"></nav>
+
 
   <div class="conteudo">
     <div class="titulo">Dados e Estatísticas</div>
@@ -96,5 +137,8 @@
       <p>Dados da Organização Internacional do Trabalho (OIT) e do Instituto Brasileiro de Geografia e Estatística (IBGE) de 2024, a taxa de ocupação das mulheres no Brasil foi de 52,7%, um valor que caiu em relação ao período pré-pandemia (2019), quando estava em 54,33%. Globalmente, a taxa de emprego das mulheres em idade ativa é de 46,4%, enquanto a dos homens é de 69,5%. Por meio dessa análise, verifica-se que as mulheres recebem apenas 79,3% do salário de homens (20,7% a menos), mesmo quando desempenham o mesmo cargo e têm a mesma qualificação. Mas, segundo a Agência IBGE de 2024, a proporção de trabalhadores em ocupações por tempo parcial é maior entre as mulheres (28,2%) do que entre os homens (14,1%). Em 2022, por exemplo, 28,0% das mulheres ocupadas trabalhavam em tempo parcial, enquanto essa proporção era de 14,4% entre os homens. Estas estatísticas podem estar relacionadas a maioria do tempo dedicado pelas mulheres serem aos cuidados com a família e aos afazeres domésticos.</p>
       <p>Apesar dos avanços, a desigualdade persiste, especialmente em áreas como mecânica e elétrica. Aumentar a representatividade feminina na engenharia ainda é um desafio global.</p>
     </div>
+    
+    <script src="script.js" defer></script>
+
 </body>
 </html>
