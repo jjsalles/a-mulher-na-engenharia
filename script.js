@@ -29,17 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {   //só Deus sabe o 
   if (currentPage === "" || currentPage === "index.html") {
 
     menu.innerHTML = `
-      <a href="#introducao">Introdução</a>
-      <a href="#exemplos">Exemplos</a>
-      <a href="#personalidades">Personalidades</a>
-      <a href="#equipe">Equipe</a>
+      <a href="#introducao">Página Inicial</a>
     `;
   } else if (paginasInternas.includes(currentPage.toLowerCase())) { 
     menu.innerHTML = `
-      <a href="index.html#introducao">Introdução</a>
-      <a href="index.html#exemplos">Exemplos</a>
-      <a href="index.html#personalidades">Personalidades</a>
-      <a href="index.html#equipe">Equipe</a>
+      <a href="index.html#introducao">Página Inicial</a>
     `;
   } else {
     menu.innerHTML = `
