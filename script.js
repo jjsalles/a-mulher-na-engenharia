@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {   //só Deus sabe o 
 
   menu.innerHTML = ""; 
 
-  const paginasInternas = ["dados.html", "historia.html", "katherine.html", "hedy.html", "grace.html"];
+  const paginasInternas = ["dados.html", "historia.html", "katherine.html", "hedy.html", "grace.html", "amanda.html"];
 
   if (currentPage === "" || currentPage === "index.html") {
 
