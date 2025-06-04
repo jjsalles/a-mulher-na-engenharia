@@ -291,6 +291,7 @@ p {
 
 .card.expanded .card-content {
   display: block;
+  margin-top: 0.5rem;
 }
 
 

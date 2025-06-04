@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("JavaScript carregado e eventos adicionados!");
 });
 
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const menu = document.getElementById("side-menu");
   const currentPage = window.location.pathname.split("/").pop();
