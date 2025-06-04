@@ -18,7 +18,7 @@ function toggleCard(card) {
   card.classList.toggle("active");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {   //só Deus sabe o que aconteceu aqui
   const menu = document.getElementById("side-menu");
   const currentPage = window.location.pathname.split("/").pop();
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="#personalidades">Personalidades</a>
       <a href="#equipe">Equipe</a>
     `;
-  } else if (paginasInternas.includes(currentPage.toLowerCase())) {  //só Deus sabe o que aconteceu aqui
+  } else if (paginasInternas.includes(currentPage.toLowerCase())) { 
     menu.innerHTML = `
       <a href="index.html#introducao">Introdução</a>
       <a href="index.html#exemplos">Exemplos</a>
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   }
   menu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', () => { //??????????
       menu.classList.remove('open');
     });
   });
