@@ -18,7 +18,7 @@ function toggleCard(card) {
   card.classList.toggle("active");
 }
 
-document.addEventListener("DOMContentLoaded", function () {   //só Deus sabe o que aconteceu aqui
+document.addEventListener("DOMContentLoaded", function () {   
   const menu = document.getElementById("side-menu");
   const currentPage = window.location.pathname.split("/").pop();
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {   //só Deus sabe o 
     `;
   }
   menu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => { //??????????
+    link.addEventListener('click', () => { 
       menu.classList.remove('open');
     });
   });
