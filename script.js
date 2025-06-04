@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="#personalidades">Personalidades</a>
       <a href="#equipe">Equipe</a>
     `;
-  } else if (paginasInternas.includes(currentPage.toLowerCase())) {
+  } else if (paginasInternas.includes(currentPage.toLowerCase())) {  //só Deus sabe o que aconteceu aqui
     menu.innerHTML = `
       <a href="index.html#introducao">Introdução</a>
       <a href="index.html#exemplos">Exemplos</a>
