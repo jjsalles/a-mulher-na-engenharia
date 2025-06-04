@@ -451,6 +451,40 @@ p {
 .card.active .card-content {
   display: block;
 }
+.ler-mais-container {
+  margin-top: 8px;  
+  text-align: center;
+  width: 100%;
+}
+
+.ler-mais-link {
+  color: #ffde59;
+  font-weight: normal;
+  font-size: 0.85em;   
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ler-mais-link:hover {
+  color: #d6b4ff;
+}
+.ler-mais-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  clear: both; 
+}
+
+.ler-mais-link {
+  font-size: 0.85em;
+  color: #ffde59;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ler-mais-link:hover {
+  color: #d6b4ff;
+}
 
 
 
